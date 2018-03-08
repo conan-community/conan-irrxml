@@ -3,6 +3,7 @@ using namespace irr;
 using namespace io;
 
 #include <string> // we use STL strings to store data in this example
+#include <string.h>
 
 int main()
 {
