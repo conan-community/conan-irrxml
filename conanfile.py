@@ -3,14 +3,14 @@ import os
 
 
 class IrrxmlConan(ConanFile):
-    name = "irrxml"
+    name = "IrrXML"
     version = "1.2"
     license = "Public Domain"
     homepage = "http://www.ambiera.com/irrxml"
     url = "https://github.com/conan-community/conan-irrxml"
     description = "irrXML is a simple and fast open source xml parser for C++"
     exports = ["LICENSE.md", ]
-    exports_sources = ["CMakeLists.txt", "Irrxml.cmake", ]
+    exports_sources = ["CMakeLists.txt", "IrrXML.cmake", "FindIrrXML.cmake"]
     generators = "cmake"
     settings = "os", "compiler", "build_type", "arch"
     source_subfolder = "sources"
@@ -44,6 +44,7 @@ class IrrxmlConan(ConanFile):
         # The library's license is not included in source code download license from homepage
         tools.download(self.homepage + "/license.html", os.path.join("licenses", "license"))
         self.copy(pattern="*license*", dst="licenses", keep_path=False, ignore_case=True)
+        self.copy("FindIrrXML.cmake", ".", ".")
 
     def package_info(self):
         self.cpp_info.libs = tools.collect_libs(self)
