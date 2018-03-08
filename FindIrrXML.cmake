@@ -1,12 +1,10 @@
 # Find LibIrrXML headers and library
 #
-#   IRRXML_FOUND          - IrrXML found
 #   IRRXML_INCLUDE_DIR    - Headers location
 #   IRRXML_LIBRARY        - IrrXML main library
 
-find_path(IRRXML_INCLUDE_DIR irrXML.h
-    PATH_SUFFIXES include/irrxml)
-find_library(IRRXML_LIBRARY IrrXML)
+find_path(IRRXML_INCLUDE_DIR irrXML.h)
+find_library(IRRXML_LIBRARY NAMES IrrXML IrrXMLd)
 
 include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(IrrXML REQUIRED_VARS IRRXML_INCLUDE_DIR IRRXML_LIBRARY)
