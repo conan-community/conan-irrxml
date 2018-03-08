@@ -2,7 +2,7 @@ from conans import ConanFile, CMake, tools
 import os
 
 
-class IrrxmlConan(ConanFile):
+class IrrXMLConan(ConanFile):
     name = "IrrXML"
     version = "1.2"
     license = "Public Domain"
