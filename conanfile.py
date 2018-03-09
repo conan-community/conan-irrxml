@@ -25,7 +25,7 @@ class IrrXMLConan(ConanFile):
             del self.options.fPIC
 
     def source(self):
-        source_url = "http://prdownloads.sourceforge.net/irrlicht/irrxml-%s.zip?download" % self.version
+        source_url = "http://prdownloads.sourceforge.net/irrlicht/irrxml-%s.zip" % self.version
         tools.get(source_url)
         os.rename("irrxml-%s" % (self.version,), self.source_subfolder)
 
