@@ -24,6 +24,10 @@ class IrrXMLConan(ConanFile):
         if self.settings.os == "Windows":
             del self.options.fPIC
 
+    def configure(self):
+        if self.settings.os == "Windows" and self.options.shared:
+            raise Exception("%s doesn't build with shared=True in Windows" % self.name)
+
     def source(self):
         source_url = "http://prdownloads.sourceforge.net/irrlicht/irrxml-%s.zip" % self.version
         tools.get(source_url)
