@@ -6,7 +6,7 @@ Travis: [![Build Status](https://travis-ci.org/conan-community/conan-irrxml.svg?
 AppVeyor : [![Build status](https://ci.appveyor.com/api/projects/status/ktwu9099a1i1ikq8?svg=true)](https://ci.appveyor.com/project/pvicente/conan-irrxml)
 
 
-[Conan.io](https://conan.io) package for [IrrXML]](http://www.ambiera.com/irrxml/) project.
+[Conan.io](https://conan.io) package for [IrrXML](http://www.ambiera.com/irrxml/) project.
 
 The packages generated with this *conanfile.py* can be found in [Bintray](https://bintray.com/conan-community/conan/IrrXML%3Aconan).
 
