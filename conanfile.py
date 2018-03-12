@@ -32,7 +32,7 @@ class IrrXMLConan(ConanFile):
         source_url = "http://prdownloads.sourceforge.net/irrlicht/irrxml-%s.zip" % self.version
         tools.get(source_url)
         os.rename("irrxml-%s" % (self.version,), self.source_subfolder)
-        # VS in debug need a patch removing original workaround
+        # Patch needed for VS compiling in debug mode. Removing original workaround with asm instructions
         tools.patch(patch_file="patches/irrtypes_debug_vs.patch")
 
     def build(self):
