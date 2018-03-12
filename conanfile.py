@@ -5,7 +5,7 @@ import os
 class IrrXMLConan(ConanFile):
     name = "IrrXML"
     version = "1.2"
-    license = "Public Domain"
+    license = "ZLIB"
     homepage = "http://www.ambiera.com/irrxml"
     url = "https://github.com/conan-community/conan-irrxml"
     description = "irrXML is a simple and fast open source xml parser for C++"
