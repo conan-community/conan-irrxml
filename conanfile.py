@@ -10,7 +10,7 @@ class IrrXMLConan(ConanFile):
     url = "https://github.com/conan-community/conan-irrxml"
     description = "irrXML is a simple and fast open source xml parser for C++"
     exports = ["LICENSE.md", ]
-    exports_sources = ["CMakeLists.txt", "IrrXML.cmake", "FindIrrXML.cmake"]
+    exports_sources = ["CMakeLists.txt", "IrrXML.cmake", "FindIrrXML.cmake", "patches/*"]
     generators = "cmake"
     settings = "os", "compiler", "build_type", "arch"
     source_subfolder = "sources"
@@ -32,6 +32,8 @@ class IrrXMLConan(ConanFile):
         source_url = "http://prdownloads.sourceforge.net/irrlicht/irrxml-%s.zip" % self.version
         tools.get(source_url)
         os.rename("irrxml-%s" % (self.version,), self.source_subfolder)
+        # VS in debug need a patch removing original workaround
+        tools.patch(patch_file="patches/irrtypes_debug_vs.patch")
 
     def build(self):
         cmake = CMake(self)
