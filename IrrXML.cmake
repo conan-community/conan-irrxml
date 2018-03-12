@@ -2,6 +2,7 @@ set(IrrXML_LIBRARY_NAME IrrXML)
 
 set(SOURCES
   sources/src/CXMLReaderImpl.h
+  sources/src/fast_atof.h
   sources/src/heapsort.h
   sources/src/irrArray.h
   sources/src/irrString.h
