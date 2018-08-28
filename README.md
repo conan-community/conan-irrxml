@@ -1,9 +1,10 @@
 # conan-IrrXML
 
-[ ![Download](https://api.bintray.com/packages/conan-community/conan/IrrXML%3Aconan/images/download.svg?version=1.2%3Astable) ](https://bintray.com/conan-community/conan/IrrXML%3Aconan/1.2%3Astable/link)
+![conan-irrxml image](/images/conan-irrxml.png)
 
-Travis: [![Build Status](https://travis-ci.org/conan-community/conan-irrxml.svg?branch=stable%2F1.2)](https://travis-ci.org/conan-community/conan-irrxml)  
-AppVeyor : [![Build status](https://ci.appveyor.com/api/projects/status/ktwu9099a1i1ikq8?svg=true)](https://ci.appveyor.com/project/pvicente/conan-irrxml)
+[ ![Download](https://api.bintray.com/packages/conan-community/conan/IrrXML%3Aconan/images/download.svg?version=1.2%3Astable) ](https://bintray.com/conan-community/conan/IrrXML%3Aconan/1.2%3Astable/link)
+[![Build Status](https://travis-ci.org/conan-community/conan-irrxml.svg?branch=stable%2F1.2)](https://travis-ci.org/conan-community/conan-irrxml)
+[![Build status](https://ci.appveyor.com/api/projects/status/ktwu9099a1i1ikq8?svg=true)](https://ci.appveyor.com/project/pvicente/conan-irrxml)
 
 
 [Conan.io](https://conan.io) package for [IrrXML](http://www.ambiera.com/irrxml/) project.
