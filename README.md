@@ -1,5 +1,5 @@
 [![Download](https://api.bintray.com/packages/conan-community/conan/IrrXML%3Aconan/images/download.svg) ](https://bintray.com/conan-community/conan/IrrXML%3Aconan/_latestVersion)
-[![Build Status Travis](https://travis-ci.org/conan-community/conan-IrrXML.svg)](https://travis-ci.org/conan-community/conan-IrrXML)
+[![Build Status Travis](https://travis-ci.org/conan-community/conan-irrxml.svg)](https://travis-ci.org/conan-community/conan-irrxml)
 [![Build Status AppVeyor](https://ci.appveyor.com/api/projects/status/github/conan-community/conan-IrrXML?svg=true)](https://ci.appveyor.com/project/ConanCIintegration/conan-IrrXML)
 
 ## Conan package recipe for [*IrrXML*](http://www.ambiera.com/irrxml)
